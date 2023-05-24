@@ -5,15 +5,16 @@
                 exclude-result-prefixes="map xs"
                 version="3.0">
 
-<xsl:output method="xml" encoding="utf-8" indent="no"/>
+<xsl:output method="xhtml" encoding="utf-8" indent="no" 
+  html-version="5" include-content-type="no"/>
 
 <xsl:param name="payload" as="map(*)?" select="()"/>
 
 <xsl:template name="xsl:initial-template">
   <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-      <title>Hello, world</title>
       <meta charset="utf-8" />
+      <title>Hello, world</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     </head>
